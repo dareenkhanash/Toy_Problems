@@ -6,7 +6,16 @@
 //  nextItem("testing", "t") # "e"
 
 	function nextItem(items, elem){
+		
 		//your code is here
+		for(var i=0;i<items.length;i++)
+		{
+			if (items[i]===elem && (i+1)<items.length){
+				return items[i+1]
+			}
+			
+		}
+		return null
 	}
 
 //  We need a function that can transform a number into a string.
@@ -16,4 +25,5 @@
 
 	function numberToString(num) {
 	  //your code is here
+	  return num+""
 	}
